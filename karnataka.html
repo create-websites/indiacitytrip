@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Karnataka State Trip - Explore the Land of Heritage</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Top cities in Karnataka, Karnataka tourism, Karnataka city tour, vacation planning" name="keywords">
+    <meta content="Discover the rich heritage, vibrant cities, and serene landscapes of Karnataka. Plan your vacation to explore ancient temples, lush hills, and cultural festivals." name="description">
+
+    <!-- Favicon -->
+    <link href="https://storage.googleapis.com/kreatewebsites/site102/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+    <!-- Libraries Stylesheet -->
+    <link href="https://storage.googleapis.com/kreatewebsites/site102/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="https://storage.googleapis.com/kreatewebsites/site102/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://storage.googleapis.com/kreatewebsites/site102/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="https://storage.googleapis.com/kreatewebsites/site102/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="https://storage.googleapis.com/kreatewebsites/site102/css/style.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif; 
+            color: #2b2d42; 
+            background: linear-gradient(to bottom right, #e6faff, #b2f5ea);
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Merriweather', serif;
+            color: #2c5282;
+        }
+        a {
+            color: #2b6cb0;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #1d4ed8;
+        }
+        .btn-primary {
+            background-color: #38b2ac;
+            border-color: #319795;
+            border-radius: 30px;
+            font-weight: bold;
+            color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+        .btn-primary:hover {
+            background-color: #2c7a7b;
+            border-color: #285e61;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            transform: translateY(-4px);
+        }
+        .navbar {
+            background: #2c5282;
+            padding: 15px 20px;
+        }
+        .navbar-light .navbar-nav .nav-link {
+            color: #ebf4ff;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: #90cdf4;
+        }
+        footer {
+            background-color: #1a202c;
+            color: #e2e8f0;
+            padding: 50px 20px;
+        }
+        footer a {
+            color: #38b2ac;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        footer a:hover {
+            color: #319795;
+        }
+        /* Box Hover Effects */
+        .box {
+            background-color: #fff;
+            border: 1px solid #e2e8f0;
+            padding: 25px;
+            border-radius: 15px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .box:hover {
+            background-color: #f0fff4; 
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transform: scale(1.08);
+        }
+        /* Chat Widget Customization */
+        df-messenger {
+            z-index: 999;
+            position: fixed;
+            bottom: 16px;
+            right: 16px;
+        }
+        df-messenger::part(chat-title) {
+            background-color: #319795; 
+            color: #fff;
+            font-weight: bold;
+        }
+        df-messenger::part(send-button) {
+            background-color: #2c7a7b; 
+            color: #fff;
+            font-size: 16px;
+        }
+        df-messenger::part(messages) {
+            background-color: #e6fffa; 
+        }
+        df-messenger::part(user-message) {
+            background-color: #319795; 
+            color: #fff;
+            font-weight: bold;
+        }
+    </style>
+    
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <df-messenger project-id="chatbot-393306" agent-id="karnataka-agent-id" language-code="en">
+        <df-messenger-chat-bubble chat-title="Karnataka"></df-messenger-chat-bubble>
+    </df-messenger>
+</head>
+</html>
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Karnataka, India</small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+91</small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@KarnatakaStateTrip.com</small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/UsCityTrip/"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.linkedin.com/company/abexperiment/"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="#" class="navbar-brand p-0">
+                <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>Karnataka Trip</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="#" class="nav-item nav-link active">Home</a>
+                    <a href="#" class="nav-item nav-link">Bengaluru</a>
+                    <a href="#" class="nav-item nav-link">Mysore</a>
+                    <a href="#" class="nav-item nav-link">Hampi</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Destinations</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="#" class="dropdown-item">Coorg</a>
+                            <a href="#" class="dropdown-item">Chikmagalur</a>
+                            <a href="#" class="dropdown-item">Gokarna</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Register</a>
+            </div>
+        </nav>
+    </div>
+
+        <div class="container-fluid bg-primary py-5 hero-header">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white mb-3 animated slideInDown">Karnataka state tour guide</h1>
+                        <p class="fs-4 text-white mb-4 animated slideInDown">Plan your vacation to explore heritage and nature</p>
+                        <div class="position-relative w-75 mx-auto animated slideInDown">
+                            <div class="gcse-searchbox"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+        <!-- About Us Section Start -->
+    <div class="bg-light">
+        <div class="search-results container">
+            <div class="gcse-searchresults"></div>
+        </div>
+    </div>
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <a href="https://www.indiacitytrip.com/Karnataka-Destinations/Mysore-Palace.aspx">
+                            <img class="img-fluid position-absolute w-100 h-100" src="https://storage.googleapis.com/kreatewebsites/photos1000/karnataka.jpg" alt="Trip to Karnataka" style="object-fit: cover;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                    <h1 class="mb-4">Welcome to<span class="text-primary"> Karnataka State Tour Guide</span></h1>
+                    <p class="mb-4">Best City Vacations in Karnataka - Bengaluru, Mysore, Hampi, Coorg, Chikmagalur</p>
+                    <p class="mb-4">Experience the beauty of Karnataka - Mysore Palace, Hampi Monuments, Coorg's Coffee Plantations, Jog Falls, Bandipur National Park</p>
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <a href="https://www.indiacitytrip.com/Karnataka-Destinations/Bangalore.aspx"><p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Bengalore</p></a>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="https://www.indiacitytrip.com/Karnataka-Destinations/places-to-visit-in-mysore.aspx"><p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Mysore</p></a>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="https://www.indiacitytrip.com/Karnataka-Destinations/hubli-tour.aspx"><p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Hubli</p></a>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="https://www.indiacitytrip.com/Karnataka-Destinations/Mangalore.aspx"><p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Manglore</p></a>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Us Section End -->
+
+    <style>
+        .service-item {
+            background-color: #ebf3ed;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            min-height: 300px;
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-item h5 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .service-item p {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        .service-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .service-item i {
+            font-size: 3em;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+    </style>
+
+<body>
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Tour Blog</h6>
+                <h1 class="mb-5">Best Cities, Palaces, Hill Stations, Beaches</h1>
+            </div>
+            <div class="row g-4">
+                <!-- Bengaluru -->
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fas fa-mountain text-primary fa-3x mb-4"></i>
+                            <a href="https://www.indiacitytrip.com/Karnataka-Destinations/Bangalore.aspx">
+                                <h5>Bengalore</h5>
+                                <p>The Garden City known for Lalbagh, Cubbon Park, and IT hubs.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mysore -->
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fas fa-landmark text-primary fa-3x mb-4"></i>
+                            <a href="https://www.indiacitytrip.com/Karnataka-Destinations/places-to-visit-in-mysore.aspx">
+                                <h5>Mysore</h5>
+                                <p>Known for Mysore Palace, Brindavan Gardens, and Chamundi Hills.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hubli -->
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fas fa-city text-primary fa-3x mb-4"></i>
+                            <a href="https://www.indiacitytrip.com/Karnataka-Destinations/hubli-tour.aspx">
+                                <h5>Hubli</h5>
+                                <p>nown for its ancient temples, Unkal Lake, and thriving commercial markets.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hampi -->
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fas fa-umbrella-beach text-primary fa-3x mb-4"></i>
+                            <a href="https://www.indiacitytrip.com/Karnataka-Destinations/Mangalore.aspx">
+                                <h5>Mangalore</h5>
+                                <p>Known for its pristine beaches, historic temples, and coastal cuisine.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+    <!-- Package Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Activities</h6>
+                <h1 class="mb-5">Ideas for Activities in Karnataka</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <!--Mangalore -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="https://storage.googleapis.com/kreatewebsites/photos600/panambur_beach.jpg" alt="Panambur Beach" style="width: 100%; height: 200px; object-fit: cover;">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Mangalore</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>1 day</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>Beach</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">Panambur Beach</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>Experience thrilling water sports, camel rides, and beautiful sunsets at Panambur Beach.</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="https://www.indiacitytrip.com/Karnataka-Destinations/Mangalore.aspx" class="btn btn-sm btn-primary px-3" style="border-radius: 30px;">Explore Mangalore</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mysore Palace -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="https://storage.googleapis.com/kreatewebsites/photos600/mysore-palace.jpg" alt="Mysore Palace" style="width: 100%; height: 200px; object-fit: cover;">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Mysore Palace</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>1 day</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>Heritage</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">Mysore</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star-half-alt text-primary"></small>
+                            </div>
+                            <p>Discover the grandeur of Mysore Palace and its historical significance.</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="https://www.indiacitytrip.com/Karnataka-Destinations/places-to-visit-in-mysore.aspx" class="btn btn-sm btn-primary px-3" style="border-radius: 30px;">Explore Mysore</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hampi -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="https://storage.googleapis.com/kreatewebsites/photos600/unkal_lake.jpg" alt="Unkal Lake" style="width: 100%; height: 200px; object-fit: cover;">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Hubli</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>1 day</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>Nature</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">Unkal Lake</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>Relax at the serene Unkal Lake, enjoy boating, and witness scenic sunsets.</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="https://www.indiacitytrip.com/Karnataka-Destinations/hubli-tour.aspx" class="btn btn-sm btn-primary px-3" style="border-radius: 30px;">Explore Hubli</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>                
+    <!-- Package End -->
+
+    <!-- Destination Start -->
+    <div class="container-xxl py-5 destination">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Destination</h6>
+                <h1 class="mb-5">Explore Karnataka</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-7 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="https://storage.googleapis.com/kreatewebsites/photos1000/bangalorePalace.jpg" alt="">
+                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Bangalore Palace</div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="https://storage.googleapis.com/kreatewebsites/photos1000/bangalore-aquarium%20Banglore.jpg" alt="">
+                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Bangalore-aquarium</div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="https://storage.googleapis.com/kreatewebsites/photos600/mysore-palace.jpg" alt="">
+                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Mysore Palace</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+                    <a class="position-relative d-block h-100 overflow-hidden" href="">
+                        <img class="img-fluid position-absolute w-100 h-100" src="https://storage.googleapis.com/kreatewebsites/photos600/bandipur_7.jpg" alt="" style="object-fit: cover;">
+                        <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Bandipur National Park</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Destination End -->
+
+    <!-- Process Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Process</h6>
+                <h1 class="mb-5">3 Easy Steps to plan your trip</h1>
+            </div>
+            <div class="row gy-5 gx-4 justify-content-center">
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="fa fa-globe fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">Choose a city</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">Explore the best of India, one city at a time. There is city for every kind of traveler</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="fa fa-dollar-sign fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">Check Budget</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">From the big cities to the small towns, there's something for everyone in the India.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="fa fa-plane fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">Let's go</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">Use our site when you are traveling for making best use of your downtime</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Process End -->
+
+<!-- Team Start -->
+<style>
+    .team-item {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        background-color: #fff;
+        transition: transform 0.3s;
+    }
+
+    .team-item:hover {
+        transform: scale(1.05);
+    }
+
+    .team-item img {
+        width: 100%;
+        height: 200px; /* Set uniform height */
+        object-fit: cover; /* Ensure the image covers the area without distortion */
+    }
+
+    .team-item .p-4 {
+        min-height: 120px; /* Ensure consistent box height */
+    }
+
+    .btn-square {
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: #f8f9fa;
+        color: #6c757d;
+        text-decoration: none;
+        border: 1px solid #ddd;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .btn-square:hover {
+        background-color: #007bff;
+        color: #fff;
+    }
+</style>
+
+
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title bg-white text-center text-primary px-3">Travel Guide</h6>
+            <h1 class="mb-5">Explore Karnataka</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="team-item">
+                    <div class="overflow-hidden">
+                        <img src="https://storage.googleapis.com/kreatewebsites/photos600/mysore-palace.jpg" alt="Mysore Palace">
+                    </div>
+                    <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                        <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="text-center p-4">
+                        <h5 class="mb-0">Mysore Palace</h5>
+                        <small>Mysore, Karnataka</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="team-item">
+                    <div class="overflow-hidden">
+                        <img src="https://storage.googleapis.com/kreatewebsites/photos600/coorg.jpg" alt="Coorg">
+                    </div>
+                    <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                        <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="text-center p-4">
+                        <h5 class="mb-0">Coorg</h5>
+                        <small>Kodagu District, Karnataka</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="team-item">
+                    <div class="overflow-hidden">
+                        <img src="https://storage.googleapis.com/kreatewebsites/photos600/hampi.jpg" alt="Hampi">
+                    </div>
+                    <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                        <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="text-center p-4">
+                        <h5 class="mb-0">Hampi</h5>
+                        <small>Vijayanagar, Karnataka</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="team-item">
+                    <div class="overflow-hidden">
+                        <img src="https://storage.googleapis.com/kreatewebsites/photos600/bandipur_9.jpg" alt="Bandipur National Park">
+                    </div>
+                    <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                        <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="text-center p-4">
+                        <h5 class="mb-0">Bandipur National Park</h5>
+                        <small>Chamarajanagar District, Karnataka</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team End -->
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <h2>Top 20 Cities to See in Karnataka</h2>
+            <ol>
+                <br/><li><strong>Bengaluru</strong> - Known as the "Silicon Valley of India," famous for Cubbon Park, Lalbagh Botanical Garden, and tech hubs. Best time to visit is during the winter season (October-February).</li>
+                <br/><li><strong>Mysore</strong> - Known as the "City of Palaces," famous for Mysore Palace, Chamundi Hills, and Dasara celebrations. Best time to visit is during October-February.</li>
+                <br/><li><strong>Coorg</strong> - Known as the "Scotland of India," famous for coffee plantations, Abbey Falls, and serene landscapes. Best time to visit is during October-March.</li>
+                <br/><li><strong>Hampi</strong> - A UNESCO World Heritage Site, famous for ancient temples, ruins, and boulder landscapes. Best time to visit is during October-March.</li>
+                <br/><li><strong>Chikmagalur</strong> - Famous for coffee plantations, Mullayanagiri Peak, and trekking trails. Best time to visit is during September-May.</li>
+                <br/><li><strong>Mangalore</strong> - Known for beaches, Udupi cuisine, and temples like Kadri Manjunath. Best time to visit is during October-February.</li>
+                <br/><li><strong>Badami</strong> - Famous for rock-cut caves, Agastya Lake, and ancient temples. Best time to visit is during November-February.</li>
+                <br/><li><strong>Bandipur</strong> - Known for Bandipur National Park, a haven for wildlife enthusiasts. Best time to visit is during October-May.</li>
+                <br/><li><strong>Gokarna</strong> - Known for its pristine beaches like Om Beach and spiritual temples. Best time to visit is during October-March.</li>
+                <br/><li><strong>Bijapur</strong> - Famous for Gol Gumbaz, Ibrahim Rauza, and other Islamic architectural marvels. Best time to visit is during October-February.</li>
+                <br/><li><strong>Hubli-Dharwad</strong> - Known for its historic architecture, Unkal Lake, and Chandramouleshwara Temple. Best time to visit is during November-February.</li>
+                <br/><li><strong>Shivamogga</strong> - Famous for Jog Falls, Agumbe, and Sharavati Valley Wildlife Sanctuary. Best time to visit is during September-February.</li>
+                <br/><li><strong>Belur</strong> - Known for the Chennakesava Temple, a fine example of Hoysala architecture. Best time to visit is during October-March.</li>
+                <br/><li><strong>Halebidu</strong> - Famous for its twin temples, showcasing intricate carvings. Best time to visit is during October-March.</li>
+                <br/><li><strong>Kudremukh</strong> - Known for its lush green hills, trekking trails, and waterfalls. Best time to visit is during September-February.</li>
+                <br/><li><strong>Udupi</strong> - Famous for Sri Krishna Temple, St. Mary's Island, and local cuisine. Best time to visit is during October-February.</li>
+                <br/><li><strong>Murudeshwar</strong> - Home to the iconic Murudeshwar Temple and stunning beaches. Best time to visit is during October-May.</li>
+                <br/><li><strong>Kolar</strong> - Known for its gold mines, Kotilingeshwara Temple, and scenic landscapes. Best time to visit is during October-March.</li>
+                <br/><li><strong>Raichur</strong> - Famous for Raichur Fort, temples, and historical significance. Best time to visit is during October-March.</li>
+                <br/><li><strong>Karwar</strong> - Known for its tranquil beaches, Kali River, and Warship Museum. Best time to visit is during October-May.</li>
+            </ol>
+        </div>
+    </div>
+
+
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
+                <h1 class="mb-5">Our Clients Say About Karnataka!!!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="https://storage.googleapis.com/kreatewebsites/photos600/mysore-palace.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Mysore Palace</h5>
+                    <p>Mysore, Karnataka</p>
+                    <p class="mb-0">A majestic palace showcasing the grandeur of the Wodeyar dynasty.</p>
+                </div>
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="https://storage.googleapis.com/kreatewebsites/photos600/coorg.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Coorg</h5>
+                    <p>Kodagu, Karnataka</p>
+                    <p class="mt-2 mb-0">A serene getaway amidst lush greenery and coffee plantations.</p>
+                </div>
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="https://storage.googleapis.com/kreatewebsites/photos600/hampi.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Hampi</h5>
+                    <p>Bellary, Karnataka</p>
+                    <p class="mt-2 mb-0">A mesmerizing glimpse into the grandeur of the Vijayanagar Empire.</p>
+                </div>
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="https://storage.googleapis.com/kreatewebsites/photos600/gokarna.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Gokarna</h5>
+                    <p>Uttara Kannada, Karnataka</p>
+                    <p class="mt-2 mb-0">A perfect blend of serene beaches and spiritual experiences.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Most Popular</h4>
+                    <a class="btn btn-link" href="#">Bengaluru</a>
+                    <a class="btn btn-link" href="#">Mysore</a>
+                    <a class="btn btn-link" href="#">Coorg</a>
+                    <a class="btn btn-link" href="#">Hampi</a>
+                    <a class="btn btn-link" href="#">Top 20</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Karnataka State Trip</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>www.karnatakastatetrip.com</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@karnatakastatetrip.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/photos600/mysore-palace.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/photos600/coorg.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/photos600/hampi.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/photos600/bandipur.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/photos600/udupi.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/photos600/gokarna.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Newsletter</h4>
+                    <p>Sign up for our newsletter and get inspired for your next trip in Karnataka.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Karnataka State Trip</a>, All Right Reserved
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Bengaluru</a>
+                            <a href="">Coorg</a>
+                            <a href="">Best Temple Trips</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://storage.googleapis.com/kreatewebsites/site102/lib/wow/wow.min.js"></script>
+    <script src="https://storage.googleapis.com/kreatewebsites/site102/lib/easing/easing.min.js"></script>
+    <script src="https://storage.googleapis.com/kreatewebsites/site102/lib/waypoints/waypoints.min.js"></script>
+    <script src="https://storage.googleapis.com/kreatewebsites/site102/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://storage.googleapis.com/kreatewebsites/site102/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="https://storage.googleapis.com/kreatewebsites/site102/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="https://storage.googleapis.com/kreatewebsites/site102/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Google Search -->
+    <script async src="https://cse.google.com/cse.js?cx=014d08d10e77b477c"></script>
+
+    <!-- Template Javascript -->
+    <script src="https://storage.googleapis.com/kreatewebsites/site102/js/main.js"></script>
+    
+</body>
