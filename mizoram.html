@@ -29,132 +29,73 @@
 
     <!-- Custom Styles -->
     <style>
-        body {
-            font-family: 'Poppins', sans-serif; 
-            color: #2b2d42; 
-            background: linear-gradient(to bottom right, #fdf5e6, #0bb8a4);
-            margin: 0;
-            padding: 0;
+        .gsc-input {
+            padding: 0px 10px !important;
+            border-radius: 50px;
+            background-color: #f2f2f2;
         }
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Merriweather', serif;
-            color: #c96f14;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-        }
-        a {
-            color: #3a2bc0;
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s ease-in-out;
-        }
-        a:hover {
-            color: #893ce7;
-        }
-        .btn-primary {
-            background-color: #7b3ce7;
-            border-color: #d63031;
-            border-radius: 30px;
-            font-weight: bold;
+
+        .gsc-search-button {
+            background-color: #007bff;
             color: #fff;
-            padding: 10px 20px;
-            transition: all 0.3s ease;
-        }
-        .btn-primary:hover {
-            background-color: #34495e;
-            border-color: #2c3e50;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-            transform: translateY(-3px);
+            border: none;
+            border-radius: 100px;
+            padding: 6px 8px;
+            cursor: pointer;
         }
 
-        .navbar {
-            background: linear-gradient(to right, #4a3ce7, #c0392b);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-        .navbar-light .navbar-nav .nav-link {
-            color: #f5f5f5;
-            font-weight: 500;
-        }
-        .navbar-light .navbar-nav .nav-link:hover {
-            color: #f39c12;
-        }
-        footer {
-            background: linear-gradient(to right, #c0392b, #e74c3c);
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        footer a {
-            color: #ecf0f1;
-            font-weight: 600;
-            transition: color 0.3s ease;
+        .gsc-search-button button {
+            background-color: transparent;
         }
 
-        footer a:hover {
-            color: #bdc3c7;
-        }
-
-        .box {
-            background-color: #ffffff;
-            border: 1px solid #ccc;
-            padding: 25px;
-            border-radius: 12px;
-            transition: all 0.4s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-        }
-
-        .box:hover {
-            background-color: #fef9e7;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
-            transform: scale(1.08);
-        }
-
-        df-messenger {
-            z-index: 999;
-            position: fixed;
-            bottom: 16px;
-            right: 16px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
-
-        df-messenger::part(chat-title) {
-            background-color: #f39c12;
-            color: #fff;
-            font-weight: bold;
-            font-size: 16px;
-        }
-
-        df-messenger::part(send-button) {
-            background-color: #27ae60;
-            color: #fff;
-            border-radius: 50%;
-            width: 36px;
-            height: 36px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        df-messenger::part(messages) {
-            background: linear-gradient(to bottom, #ecf0f1, #bdc3c7);
+        .gsc-search-box {
             padding: 10px;
-            border-radius: 8px;
+            border-radius: 100px;
+            background-color: #f2f2f2;
         }
 
-        df-messenger::part(user-message) {
-            background-color: #27ae60;
-            color: #fff;
-            border-radius: 20px;
-            padding: 10px 15px;
+        .gsc-control-cse {
+            margin: 0 !important;
+            border: none !important;
+            background-color: transparent !important;
+        }
+
+        .gsc-input-box {
+            margin: 0 !important;
+            border: none !important;
+            background-color: transparent !important;
+        }
+
+        .gsc-expansionArea{
+            background-color: white !important;
+        }
+
+        .gsc-result {
+            background-color: transparent !important;
+            border: none !important;
+            padding: 10px 15px 10px 15px !important;
+        }
+
+        .gsc-cursor-box {
+            background-color: white;
+            border-radius: 10px !important;
         }
     </style>
-
+    
     <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
     <df-messenger project-id="chatbot-393306" agent-id="a6db25ea-2a55-43d8-b712-6b23c64397da" language-code="en">
-        <df-messenger-chat-bubble chat-title="Mizoram"></df-messenger-chat-bubble>
+        <df-messenger-chat-bubble chat-title="usa"></df-messenger-chat-bubble>
     </df-messenger>
+    <style>
+        df-messenger {
+          z-index: 999;
+          position: fixed;
+          bottom: 16px;
+          right: 16px;
+        }
+    </style>
 </head>
-</html>
+
 
 <body>
     <!-- Spinner Start -->
@@ -166,55 +107,71 @@
     <!-- Spinner End -->
 
     <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
-        <div class="row gx-0">
-            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Mizoram, India</small>
-                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+91</small>
-                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@MizoramStateTrip.com</small>
-                </div>
-            </div>
-            <div class="col-lg-4 text-center text-lg-end">
-                <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/UsCityTrip/"><i class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.linkedin.com/company/abexperiment/"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
-
-    <!-- Navbar Start -->
-    <div class="container-fluid position-relative p-0">
+     <!-- Topbar Start -->
+     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-            <a href="#" class="navbar-brand p-0">
-                <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>Mizoram Trip</h1>
+            <a href="" class="navbar-brand p-0">
+                <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>India City Trip</h1>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="#" class="nav-item nav-link active">Home</a>
-                    <a href="#" class="nav-item nav-link">Aizawl</a>
-                    <a href="#" class="nav-item nav-link">Lunglei</a>
-                    <a href="#" class="nav-item nav-link">Champhai</a>
-                    <a href="#" class="nav-item nav-link">Serchhip</a>
+                    <a href="https://www.usacitytrip.com/" class="nav-item nav-link active">Home</a>
+                    <a href="https://www.indiacitytrip.com/South-India-Cities.aspx" class="nav-item nav-link">South India</a>
+                    <a href="https://www.indiacitytrip.com/West-India-Cities.aspx" class="nav-item nav-link">West India</a>
+                    <a href="https://www.indiacitytrip.com/North-India-Cities.aspx" class="nav-item nav-link">North India</a>
+                    <a href="https://www.indiacitytrip.com/East-India-Cities.aspx" class="nav-item nav-link">East India</a>
+                    
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Destinations</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pilgrimages</a>
                         <div class="dropdown-menu m-0">
-                            <a href="#" class="dropdown-item">Mamit</a>
-                            <a href="#" class="dropdown-item">Kolasib</a>
-                            <a href="#" class="dropdown-item">Saiha</a>
+                            <a href="https://www.indiacitytrip.com/pilgrimages/ayodhya.html" class="dropdown-item">Ayodhya</a>
+                            <a href="https://www.indiacitytrip.com/pilgrimages/vaishnodevi.html" class="dropdown-item">Vaishnodevi</a>
+                            <a href="https://www.indiacitytrip.com/pilgrimages/haridwar.html" class="dropdown-item">Haridwar</a>
+                            <a href="https://www.indiacitytrip.com/pilgrimages/tirupati.html" class="dropdown-item">Tirupati Balaji</a>
+                            <a href="https://www.indiacitytrip.com/pilgrimages/shirdi.html" class="dropdown-item">Shirdi</a>
+                        </div>
+                    </div>
+                    <a href="https://www.indiacitytrip.com/other-india-cities.aspx" class="nav-item nav-link">Other Cities</a>
+                </div>
+                <a href="https://www.indiacitytrip.com/sitemap.html" class="btn btn-primary rounded-pill py-2 px-4">Sitemap</a>
+            </div>
+        </nav>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>USA City Trip</h1>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="https://www.usacitytrip.com/" class="nav-item nav-link active">Home</a>
+                    <a href="https://www.usacitytrip.com/nevada/nevada-cities-1.html" class="nav-item nav-link">Las Vegas</a>
+                    <a href="https://www.usacitytrip.com/hawaii/" class="nav-item nav-link">Hawaii</a>
+                    <a href="https://www.usacitytrip.com/alaska/" class="nav-item nav-link">Alaska</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Beaches</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="https://www.usacitytrip.com/florida/clearwater-beach.html" class="dropdown-item">Florida</a>
+                            <a href="https://www.usacitytrip.com/hawaii/hawaii-best-beaches.html" class="dropdown-item">5 best of Hawaii</a>
+                            <a href="https://www.usacitytrip.com/newjersey/" class="dropdown-item">New Jersey</a>
+                            <a href="https://www.usacitytrip.com/massachusetts/" class="dropdown-item">Massachusetts</a>
+                            <a href="https://www.usacitytrip.com/kansas/" class="dropdown-item">Kansas</a>
                         </div>
                     </div>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Register</a>
+                <a href="" class="btn btn-primary rounded-pill py-2 px-4">Register</a>
             </div>
         </nav>
     </div>
@@ -246,7 +203,7 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <a href="https://www.gujaratcitytrip.com/slides/image.html?imageurl=https://storage.googleapis.com/createweb/indiacitytrip.com/code/images/Mizoram/mizoram-image.jpg">
+                        <a href="#">
                             <img class="img-fluid position-absolute w-100 h-100" src="https://storage.googleapis.com/createweb/indiacitytrip.com/code/images/Mizoram/mizoram-image.jpg" alt="Trip to Mizoram" style="object-fit: cover;">
                         </a>
                     </div>
@@ -261,16 +218,16 @@
                             <a href="https://www.indiacitytrip.com/Mizoram-Destinations/Aizawl.aspx"><p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Aizawl</p></a>
                         </div>
                         <div class="col-sm-6">
-                            <a href="https://www.indiacitytrip.com/Mizoram-Destinations/Lunglei.aspx"><p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Lunglei</p></a>
+                            <a href="#"><p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Lunglei</p></a>
                         </div>
                         <div class="col-sm-6">
-                            <a href="https://www.indiacitytrip.com/Mizoram-Destinations/Champhai.aspx"><p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Champhai</p></a>
+                            <a href="#"><p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Champhai</p></a>
                         </div>
                         <div class="col-sm-6">
-                            <a href="https://www.indiacitytrip.com/Mizoram-Destinations/Serchhip.aspx"><p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Serchhip</p></a>
+                            <a href="#"><p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Serchhip</p></a>
                         </div>
                         <div class="col-sm-6">
-                            <a href="https://www.indiacitytrip.com/Mizoram-Destinations/Kolasib.aspx"><p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Kolasib</p></a>
+                            <a href="#"><p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Kolasib</p></a>
                         </div>
                     </div>
                     <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
@@ -343,7 +300,7 @@
                     <div class="service-item rounded pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
-                            <a href="https://www.indiacitytrip.com/Mizoram-Destinations/Lunglei.aspx">
+                            <a href="#">
                                 <h5>Lunglei</h5>
                                 <p>Known for its picturesque landscapes, trekking opportunities, and serene environment.</p>
                             </a>
@@ -354,7 +311,7 @@
                     <div class="service-item rounded pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-user text-primary mb-4"></i>
-                            <a href="https://www.indiacitytrip.com/Mizoram-Destinations/Champhai.aspx">
+                            <a href="#">
                                 <h5>Champhai</h5>
                                 <p>Famous for vineyards, Rih Dil Lake, and a gateway to Myanmar.</p>
                             </a>
@@ -365,7 +322,7 @@
                     <div class="service-item rounded pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-cog text-primary mb-4"></i>
-                            <a href="https://www.indiacitytrip.com/Mizoram-Destinations/Vantawng-Falls.aspx">
+                            <a href="#">
                                 <h5>Vantawng Falls</h5>
                                 <p>The highest waterfall in Mizoram, surrounded by lush greenery.</p>
                             </a>
@@ -376,7 +333,7 @@
                     <div class="service-item rounded pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-globe text-primary mb-4"></i>
-                            <a href="https://www.indiacitytrip.com/Mizoram-Destinations/Serchhip.aspx">
+                            <a href="#">
                                 <h5>Serchhip</h5>
                                 <p>Famous for wildlife sanctuaries and beautiful landscapes.</p>
                             </a>
@@ -387,7 +344,7 @@
                     <div class="service-item rounded pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
-                            <a href="https://www.indiacitytrip.com/Mizoram-Destinations/Reiek.aspx">
+                            <a href="#">
                                 <h5>Reiek</h5>
                                 <p>Known for Reiek Tlang, a popular trekking destination with panoramic views.</p>
                             </a>
@@ -398,7 +355,7 @@
                     <div class="service-item rounded pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-user text-primary mb-4"></i>
-                            <a href="https://www.indiacitytrip.com/Mizoram-Destinations/Kolasib.aspx">
+                            <a href="#">
                                 <h5>Kolasib</h5>
                                 <p>Renowned for its serene environment and agricultural significance.</p>
                             </a>
@@ -409,7 +366,7 @@
                     <div class="service-item rounded pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-cog text-primary mb-4"></i>
-                            <a href="https://www.indiacitytrip.com/Mizoram-Destinations/Tam-Dil.aspx">
+                            <a href="#">
                                 <h5>Tam Dil</h5>
                                 <p>A beautiful lake offering boating and surrounded by scenic beauty.</p>
                             </a>
@@ -452,7 +409,7 @@
                             </div>
                             <p>Visit the highest waterfall in Mizoram, surrounded by lush greenery.</p>
                             <div class="d-flex justify-content-center mb-2">
-                                <a href="https://www.indiacitytrip.com/Mizoram-Destinations/Vantawng-Falls.aspx" class="btn btn-sm btn-primary px-3" style="border-radius: 30px;">Explore Vantawng Falls</a>
+                                <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 30px;">Explore Vantawng Falls</a>
                             </div>
                         </div>
                     </div>
@@ -480,7 +437,7 @@
                             </div>
                             <p>Trek to Reiek Hills and enjoy breathtaking views of the surrounding landscapes.</p>
                             <div class="d-flex justify-content-center mb-2">
-                                <a href="https://www.indiacitytrip.com/Mizoram-Destinations/Reiek.aspx" class="btn btn-sm btn-primary px-3" style="border-radius: 30px;">Explore Reiek Hills</a>
+                                <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 30px;">Explore Reiek Hills</a>
                             </div>
                         </div>
                     </div>
@@ -508,7 +465,7 @@
                             </div>
                             <p>Explore the serene beauty of the Blue Mountain and spot exotic wildlife.</p>
                             <div class="d-flex justify-content-center mb-2">
-                                <a href="https://www.indiacitytrip.com/Mizoram-Destinations/Phawngpui.aspx" class="btn btn-sm btn-primary px-3" style="border-radius: 30px;">Explore Phawngpui</a>
+                                <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 30px;">Explore Phawngpui</a>
                             </div>
                         </div>
                     </div>
@@ -796,82 +753,83 @@
     </div>
     <!-- Testimonial End -->
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Most Popular</h4>
-                    <a class="btn btn-link" href="#">Aizawl</a>
-                    <a class="btn btn-link" href="#">Reiek Hills</a>
-                    <a class="btn btn-link" href="#">Phawngpui</a>
-                    <a class="btn btn-link" href="#">Vantawng Falls</a>
-                    <a class="btn btn-link" href="#">Top 20</a>
+   <!-- Footer Start -->
+   <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Most popular</h4>
+                <a class="btn btn-link" href="https://www.indiacitytrip.com/Maharashtra-Destinations/Mumbai.aspx">Munbai and Around</a>
+                <a class="btn btn-link" href="https://www.indiacitytrip.com/Rajasthan-Destinations/places-to-see-in-jodhpur.aspx">Jodhpur</a>
+                <a class="btn btn-link" href="https://www.indiacitytrip.com/Himachal-Pradesh-Destinations/Shimla.aspx">Shimla and Manali</a>
+                <a class="btn btn-link" href="https://www.indiacitytrip.com/pilgrimages/ayodhya.html">Ayodhya</a>
+                <a class="btn btn-link" href="https://www.indiacitytrip.com/top-cities.aspx">Top 20</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Contact</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>India City Trip</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>www.indiacitytrip.com</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@indiacitytrip.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Contact</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Mizoram State Trip</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>www.Mizoramstatetrip.com</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@Mizoramstatetrip.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Gallery</h4>
+                <div class="row g-2 pt-2">
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/site102/img/package-1.jpg" alt="Top Cities">
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Gallery</h4>
-                    <div class="row g-2 pt-2">
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/photos600/reiek-hills.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/photos600/vantawng-falls.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/photos600/phawngpui.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/photos600/tam-dil.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/photos600/aizawl.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/photos600/blue-mountain.jpg" alt="">
-                        </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/site102/img/package-2.jpg" alt="City Tour">
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Newsletter</h4>
-                    <p>Sign up for our newsletter and get inspired for your next trip in Mizoram.</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/site102/img/package-3.jpg" alt="Forth and History">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/site102/img/package-2.jpg" alt="Beaches">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/site102/img/package-3.jpg" alt="Pilgrimages">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/site102/img/package-1.jpg" alt="Family Fun">
                     </div>
                 </div>
             </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Search</h4>
+                <p>Mahakhumbh is happening in India</p>
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+                    <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Search</button>
+                </div>
+            </div>
         </div>
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Mizoram State Trip</a>, All Right Reserved
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <div class="footer-menu">
-                            <a href="">Home</a>
-                            <a href="">Aizawl</a>
-                            <a href="">Reiek Hills</a>
-                            <a href="">Best Nature Trails</a>
-                        </div>
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="https://www.indiacitytrip.com/">India City Trip</a>, All Right Reserved
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        <a href="https://www.indiacitytrip.com/">Home</a>
+                        <a href="https://www.indiacitytrip.com/East-India-Cities.aspx">East India</a>
+                        <a href="https://www.indiacitytrip.com/West-India-Cities.aspx">West India</a>
+                        <a href="https://www.indiacitytrip.com/South-India-Cities.aspx">Best South India</a>
+                        <a href="https://www.indiacitytrip.com/North-India-Cities.aspx">North South India</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer End -->
+</div>
+<!-- Footer End -->
 
 
     <!-- Back to Top -->
@@ -895,3 +853,4 @@
     <script src="https://storage.googleapis.com/kreatewebsites/site102/js/main.js"></script>
 
 </body>
+</html>

@@ -30,122 +30,72 @@
 
     <!-- Custom Styles -->
     <style>
-        body {
-            font-family: 'Poppins', sans-serif; 
-            color: #801171; /* Deep blue for text */
-            background: linear-gradient(to bottom right, #ebaf55, #e3e0e1);
-            margin: 0;
-            padding: 0;
+        .gsc-input {
+            padding: 0px 10px !important;
+            border-radius: 50px;
+            background-color: #f2f2f2;
         }
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Merriweather', serif;
-            color: #e63946; /* Vivid red for headings */
-        }
-        a {
-            color: #457b9d; /* Muted blue */
-            text-decoration: none;
-            font-weight: 600;
-        }
-        a:hover {
-            color: #1d3557; /* Deep blue for hover */
-        }
-        .btn-primary {
-            background-color: #ff7f50; /* Coral for button */
-            border-color: #e63946; /* Matching red border */
-            border-radius: 30px;
-            font-weight: bold;
+
+        .gsc-search-button {
+            background-color: #007bff;
             color: #fff;
-            padding: 10px 20px;
-            transition: all 0.3s ease-in-out;
-        }
-        .btn-primary:hover {
-            background-color: #f3722c; /* Darker coral */
-            border-color: #d43f1f;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow */
-            transform: translateY(-3px); /* Lift effect */
+            border: none;
+            border-radius: 100px;
+            padding: 6px 8px;
+            cursor: pointer;
         }
 
-        .navbar {
-            background: #003566; /* Dark navy for navbar */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .navbar-light .navbar-nav .nav-link {
-            color: #f8f9fa; /* White for links */
-            font-weight: 500;
-        }
-        .navbar-light .navbar-nav .nav-link:hover {
-            color: #ff7eb9; /* Bright pink hover effect */
+        .gsc-search-button button {
+            background-color: transparent;
         }
 
-        footer {
-            background-color: #003566; /* Dark navy for footer */
-            color: #f8f9fa; /* Light text */
-            padding: 20px;
-            text-align: center;
-        }
-        footer a {
-            color: #a8dadc; /* Soft teal */
-            font-weight: 600;
-        }
-        footer a:hover {
-            color: #1d3557; /* Deep blue hover */
+        .gsc-search-box {
+            padding: 10px;
+            border-radius: 100px;
+            background-color: #f2f2f2;
         }
 
-        /* Box Hover Effects */
-        .box {
-            background-color: #ffffff;
-            border: 1px solid #e1e1e1;
-            padding: 20px;
-            border-radius: 12px;
-            transition: all 0.4s ease-in-out;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        .gsc-control-cse {
+            margin: 0 !important;
+            border: none !important;
+            background-color: transparent !important;
         }
 
-        .box:hover {
-            background-color: #f4f1de; /* Soft beige */
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-            transform: scale(1.07); /* Zoom effect */
+        .gsc-input-box {
+            margin: 0 !important;
+            border: none !important;
+            background-color: transparent !important;
         }
 
-        /* Chat Widget Customization */
-        df-messenger {
-            z-index: 9999;
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
+        .gsc-expansionArea{
+            background-color: white !important;
         }
 
-        df-messenger::part(chat-title) {
-            background-color: #ff7eb9; /* Bright pink for chat title */
-            color: #ffffff;
-            font-weight: bold;
+        .gsc-result {
+            background-color: transparent !important;
+            border: none !important;
+            padding: 10px 15px 10px 15px !important;
         }
 
-        df-messenger::part(send-button) {
-            background-color: #1d3557; /* Deep blue */
-            color: #ffffff;
-            border-radius: 50%;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-
-        df-messenger::part(messages) {
-            background-color: #f8f9fa; /* Light gray for chat background */
-        }
-
-        df-messenger::part(user-message) {
-            background-color: #e63946; /* Vivid red */
-            color: #ffffff;
-            border-radius: 15px;
-            padding: 8px 12px;
+        .gsc-cursor-box {
+            background-color: white;
+            border-radius: 10px !important;
         }
     </style>
 
     <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
     <df-messenger project-id="chatbot-393306" agent-id="a6db25ea-2a55-43d8-b712-6b23c64397da" language-code="en">
-        <df-messenger-chat-bubble chat-title="Gujarat"></df-messenger-chat-bubble>
+        <df-messenger-chat-bubble chat-title="usa"></df-messenger-chat-bubble>
     </df-messenger>
+    <style>
+        df-messenger {
+          z-index: 999;
+          position: fixed;
+          bottom: 16px;
+          right: 16px;
+        }
+    </style>
 </head>
-</html>
 
 
 <body>
@@ -157,14 +107,14 @@
     </div>
     <!-- Spinner End -->
 
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+     <!-- Topbar Start -->
+     <div class="container-fluid bg-dark px-5 d-none d-lg-block">
         <div class="row gx-0">
             <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Uttar Pradesh, India</small>
-                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+91</small>
-                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@UttarPradeshStateTrip.com</small>
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Washington, USA</small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+1</small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@usacitytrip.com</small>
                 </div>
             </div>
             <div class="col-lg-4 text-center text-lg-end">
@@ -183,34 +133,38 @@
     <!-- Navbar Start -->
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-            <a href="#" class="navbar-brand p-0">
-                <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>Uttar Pradesh Trip</h1>
+            <a href="" class="navbar-brand p-0">
+                <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>India City Trip</h1>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="#" class="nav-item nav-link active">Home</a>
-                    <a href="#" class="nav-item nav-link">Lucknow</a>
-                    <a href="#" class="nav-item nav-link">Varanasi</a>
-                    <a href="#" class="nav-item nav-link">Agra</a>
-                    <a href="#" class="nav-item nav-link">Prayagraj</a>
+                    <a href="https://www.usacitytrip.com/" class="nav-item nav-link active">Home</a>
+                    <a href="https://www.indiacitytrip.com/South-India-Cities.aspx" class="nav-item nav-link">South India</a>
+                    <a href="https://www.indiacitytrip.com/West-India-Cities.aspx" class="nav-item nav-link">West India</a>
+                    <a href="https://www.indiacitytrip.com/North-India-Cities.aspx" class="nav-item nav-link">North India</a>
+                    <a href="https://www.indiacitytrip.com/East-India-Cities.aspx" class="nav-item nav-link">East India</a>
+                    
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Destinations</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pilgrimages</a>
                         <div class="dropdown-menu m-0">
-                            <a href="#" class="dropdown-item">Kanpur</a>
-                            <a href="#" class="dropdown-item">Mathura</a>
-                            <a href="#" class="dropdown-item">Jhansi</a>
+                            <a href="https://www.indiacitytrip.com/pilgrimages/ayodhya.html" class="dropdown-item">Ayodhya</a>
+                            <a href="https://www.indiacitytrip.com/pilgrimages/vaishnodevi.html" class="dropdown-item">Vaishnodevi</a>
+                            <a href="https://www.indiacitytrip.com/pilgrimages/haridwar.html" class="dropdown-item">Haridwar</a>
+                            <a href="https://www.indiacitytrip.com/pilgrimages/tirupati.html" class="dropdown-item">Tirupati Balaji</a>
+                            <a href="https://www.indiacitytrip.com/pilgrimages/shirdi.html" class="dropdown-item">Shirdi</a>
                         </div>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="https://www.indiacitytrip.com/other-india-cities.aspx" class="nav-item nav-link">Other Cities</a>
                 </div>
-                <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Register</a>
+                <a href="https://www.indiacitytrip.com/sitemap.html" class="btn btn-primary rounded-pill py-2 px-4">Sitemap</a>
             </div>
         </nav>
     </div>
-    <!-- Navbar End -->
+
 
     <!-- Hero Section Start -->
         <div class="container-fluid bg-primary py-5 hero-header">
@@ -800,82 +754,83 @@
     </div>
     <!-- Testimonial End -->
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Most Popular</h4>
-                    <a class="btn btn-link" href="#">Varanasi</a>
-                    <a class="btn btn-link" href="#">Agra</a>
-                    <a class="btn btn-link" href="#">Lucknow</a>
-                    <a class="btn btn-link" href="#">Ayodhya</a>
-                    <a class="btn btn-link" href="#">Top 20</a>
+   <!-- Footer Start -->
+   <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Most popular</h4>
+                <a class="btn btn-link" href="https://www.indiacitytrip.com/Maharashtra-Destinations/Mumbai.aspx">Munbai and Around</a>
+                <a class="btn btn-link" href="https://www.indiacitytrip.com/Rajasthan-Destinations/places-to-see-in-jodhpur.aspx">Jodhpur</a>
+                <a class="btn btn-link" href="https://www.indiacitytrip.com/Himachal-Pradesh-Destinations/Shimla.aspx">Shimla and Manali</a>
+                <a class="btn btn-link" href="https://www.indiacitytrip.com/pilgrimages/ayodhya.html">Ayodhya</a>
+                <a class="btn btn-link" href="https://www.indiacitytrip.com/top-cities.aspx">Top 20</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Contact</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>India City Trip</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>www.indiacitytrip.com</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@indiacitytrip.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Contact</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Uttar Pradesh State Trip</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>www.UttarPradeshStateTrip.com</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@UttarPradeshStateTrip.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Gallery</h4>
+                <div class="row g-2 pt-2">
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/site102/img/package-1.jpg" alt="Top Cities">
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Gallery</h4>
-                    <div class="row g-2 pt-2">
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="https://www.sotc.in/blog/wp-content/uploads/2024/04/Varanasi-Ghat-2.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/photos600/Tajmahal.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="https://static.toiimg.com/img/103890956/Master.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="https://volzero.com/img/news/88041_banner.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/photos600/Sarnath.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/photos600/kumbh%20mela.jpg" alt="">
-                        </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/site102/img/package-2.jpg" alt="City Tour">
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Newsletter</h4>
-                    <p>Sign up for our newsletter and get inspired for your next trip in Uttar Pradesh.</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/site102/img/package-3.jpg" alt="Forth and History">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/site102/img/package-2.jpg" alt="Beaches">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/site102/img/package-3.jpg" alt="Pilgrimages">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/site102/img/package-1.jpg" alt="Family Fun">
                     </div>
                 </div>
             </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Search</h4>
+                <p>Mahakhumbh is happening in India</p>
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+                    <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Search</button>
+                </div>
+            </div>
         </div>
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Uttar Pradesh State Trip</a>, All Right Reserved
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <div class="footer-menu">
-                            <a href="">Home</a>
-                            <a href="">Varanasi</a>
-                            <a href="">Agra</a>
-                            <a href="">Lucknow</a>
-                        </div>
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="https://www.indiacitytrip.com/">India City Trip</a>, All Right Reserved
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        <a href="https://www.indiacitytrip.com/">Home</a>
+                        <a href="https://www.indiacitytrip.com/East-India-Cities.aspx">East India</a>
+                        <a href="https://www.indiacitytrip.com/West-India-Cities.aspx">West India</a>
+                        <a href="https://www.indiacitytrip.com/South-India-Cities.aspx">Best South India</a>
+                        <a href="https://www.indiacitytrip.com/North-India-Cities.aspx">North South India</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer End -->
+</div>
+<!-- Footer End -->
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
@@ -898,3 +853,4 @@
     <script src="https://storage.googleapis.com/kreatewebsites/site102/js/main.js"></script>
 
 </body>
+</html>

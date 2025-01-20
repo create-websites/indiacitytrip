@@ -11,148 +11,100 @@
     <link href="https://storage.googleapis.com/kreatewebsites/site102/img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+ 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+ 
     <!-- Libraries Stylesheet -->
     <link href="https://storage.googleapis.com/kreatewebsites/site102/lib/animate/animate.min.css" rel="stylesheet">
     <link href="https://storage.googleapis.com/kreatewebsites/site102/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="https://storage.googleapis.com/kreatewebsites/site102/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
+ 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="https://storage.googleapis.com/kreatewebsites/site102/css/bootstrap.min.css" rel="stylesheet">
-
+ 
     <!-- Template Stylesheet -->
     <link href="https://storage.googleapis.com/kreatewebsites/site102/css/style.css" rel="stylesheet">
+ 
 
     <!-- Custom Styles -->
     <style>
-        /* Updated Base Styles */
-        body {
-            font-family: 'Poppins', sans-serif; 
-            color: #333;
-            background: linear-gradient(to bottom right, #fdfcfb, #e2d1c3); /* Soft neutral gradient for elegance */
-            margin: 0;
-            padding: 0;
+        .gsc-input {
+            padding: 0px 10px !important;
+            border-radius: 50px;
+            background-color: #f2f2f2;
         }
-    
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Merriweather', serif; /* Elegant serif font for headings */
-            color: #d1495b; /* Warm coral red for prominence */
-        }
-    
-        a {
-            color: #4a90e2; /* Calm blue for links */
-            text-decoration: none;
-            font-weight: 500;
-        }
-    
-        a:hover {
-            color: #1d3557; /* Deep navy for hover effect */
-        }
-    
-        /* Button Customization */
-        .btn-primary {
-            background-color: #3a6351; /* Refreshing forest green */
-            border-color: #2a5040;
-            border-radius: 20px;
-            font-weight: bold;
+
+        .gsc-search-button {
+            background-color: #007bff;
             color: #fff;
-            transition: all 0.3s ease-in-out;
+            border: none;
+            border-radius: 100px;
+            padding: 6px 8px;
+            cursor: pointer;
         }
-    
-        .btn-primary:hover {
-            background-color: #2a5040; /* Darker shade for hover */
-            border-color: #3a6351;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
-            transform: translateY(-2px); /* Slight lift on hover */
+
+        .gsc-search-button button {
+            background-color: transparent;
         }
-    
-        /* Navbar Styles */
-        .navbar {
-            background: #1d3557; /* Rich dark blue for navbar */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        .gsc-search-box {
+            padding: 10px;
+            border-radius: 100px;
+            background-color: #f2f2f2;
         }
-    
-        .navbar-light .navbar-nav .nav-link {
-            color: #f1faee; /* Soft white for navbar links */
-            font-size: 16px;
+
+        .gsc-control-cse {
+            margin: 0 !important;
+            border: none !important;
+            background-color: transparent !important;
         }
-    
-        .navbar-light .navbar-nav .nav-link:hover {
-            color: #fca311; /* Golden yellow for hover */
+
+        .gsc-input-box {
+            margin: 0 !important;
+            border: none !important;
+            background-color: transparent !important;
         }
-    
-        /* Footer Styles */
-        footer {
-            background-color: #1d3557; /* Dark blue for footer */
-            color: #f1faee; /* Soft white for text */
-            padding: 20px 0;
+
+        .gsc-expansionArea{
+            background-color: white !important;
         }
-    
-        footer a {
-            color: #a8dadc; /* Light teal for footer links */
-            font-weight: 500;
+
+        .gsc-result {
+            background-color: transparent !important;
+            border: none !important;
+            padding: 10px 15px 10px 15px !important;
         }
-    
-        footer a:hover {
-            color: #457b9d; /* Muted blue for hover */
-        }
-    
-        /* Box Hover Effects */
-        .box {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            padding: 20px;
-            border-radius: 10px;
-            transition: all 0.3s ease-in-out;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-    
-        .box:hover {
-            background-color: #f1f7ed; /* Light green for hover effect */
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-            transform: scale(1.05); /* Subtle zoom-in on hover */
-        }
-    
-        /* Chat Widget Customization */
-        df-messenger {
-            z-index: 999;
-            position: fixed;
-            bottom: 16px;
-            right: 16px;
-        }
-    
-        df-messenger::part(chat-title) {
-            background-color: #ff8c42; /* Bright orange for chat title */
-            color: #fff;
-        }
-    
-        df-messenger::part(send-button) {
-            background-color: #3a6351; /* Green for send button */
-            color: #fff;
-        }
-    
-        df-messenger::part(messages) {
-            background-color: #e6f4f1; /* Light teal for chat messages background */
-        }
-    
-        df-messenger::part(user-message) {
-            background-color: #3a6351; /* Green for user messages */
-            color: #fff;
+
+        .gsc-cursor-box {
+            background-color: white;
+            border-radius: 10px !important;
         }
     </style>
     
-
     <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
-    <df-messenger project-id="chatbot-393306" agent-id="a6db25ea-2a55-43d8-b712-6b23c64397da" language-code="en">
-        <df-messenger-chat-bubble chat-title="Gujarat"></df-messenger-chat-bubble>
-    </df-messenger>
-</head>
-</html>
+<df-messenger
+  project-id="chatbot-393306"
+  agent-id="a6db25ea-2a55-43d8-b712-6b23c64397da"
+  language-code="en">
+  <df-messenger-chat-bubble
+   chat-title="usa">
+  </df-messenger-chat-bubble>
+</df-messenger>
+<style>
+  df-messenger {
+    z-index: 999;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+  }
+</style>
 
+</head>
 
 <body>
     <!-- Spinner Start -->
@@ -165,52 +117,66 @@
 
 
     <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
-        <div class="row gx-0">
-            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Gujarat, India</small>
-                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+1</small>
-                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@Gujaratcitytrip.com</small>
-                </div>
-            </div>
-            <div class="col-lg-4 text-center text-lg-end">
-                <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/UsCityTrip/"><i class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.linkedin.com/company/abexperiment/"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Top End-->
-
-    
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
             <a href="" class="navbar-brand p-0">
-                <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>Gujarat State Trip</h1>
+                <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>India City Trip</h1>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="#" class="nav-item nav-link active">Home</a>
-                    <a href="#" class="nav-item nav-link">Ahmedabad</a>
-                    <a href="#" class="nav-item nav-link">Surat</a>
-                    <a href="#" class="nav-item nav-link">Vadodara</a>
-                    <a href="#" class="nav-item nav-link">Rajkot</a>
+                    <a href="https://www.usacitytrip.com/" class="nav-item nav-link active">Home</a>
+                    <a href="https://www.indiacitytrip.com/South-India-Cities.aspx" class="nav-item nav-link">South India</a>
+                    <a href="https://www.indiacitytrip.com/West-India-Cities.aspx" class="nav-item nav-link">West India</a>
+                    <a href="https://www.indiacitytrip.com/North-India-Cities.aspx" class="nav-item nav-link">North India</a>
+                    <a href="https://www.indiacitytrip.com/East-India-Cities.aspx" class="nav-item nav-link">East India</a>
+                    
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Destinations</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pilgrimages</a>
                         <div class="dropdown-menu m-0">
-                            <a href="#" class="dropdown-item">Gir National Park</a>
-                            <a href="#" class="dropdown-item">Somnath</a>
-                            <a href="#" class="dropdown-item">Dwarka</a>
-                            <a href="#" class="dropdown-item">Rann of Kutch</a>
-                            <a href="#" class="dropdown-item">Saputara</a>
+                            <a href="https://www.indiacitytrip.com/pilgrimages/ayodhya.html" class="dropdown-item">Ayodhya</a>
+                            <a href="https://www.indiacitytrip.com/pilgrimages/vaishnodevi.html" class="dropdown-item">Vaishnodevi</a>
+                            <a href="https://www.indiacitytrip.com/pilgrimages/haridwar.html" class="dropdown-item">Haridwar</a>
+                            <a href="https://www.indiacitytrip.com/pilgrimages/tirupati.html" class="dropdown-item">Tirupati Balaji</a>
+                            <a href="https://www.indiacitytrip.com/pilgrimages/shirdi.html" class="dropdown-item">Shirdi</a>
+                        </div>
+                    </div>
+                    <a href="https://www.indiacitytrip.com/other-india-cities.aspx" class="nav-item nav-link">Other Cities</a>
+                </div>
+                <a href="https://www.indiacitytrip.com/sitemap.html" class="btn btn-primary rounded-pill py-2 px-4">Sitemap</a>
+            </div>
+        </nav>
+    </div>
+
+
+    
+     <!-- Navbar & Hero Start -->
+     <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>USA City Trip</h1>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="https://www.usacitytrip.com/" class="nav-item nav-link active">Home</a>
+                    <a href="https://www.usacitytrip.com/nevada/nevada-cities-1.html" class="nav-item nav-link">Las Vegas</a>
+                    <a href="https://www.usacitytrip.com/hawaii/" class="nav-item nav-link">Hawaii</a>
+                    <a href="https://www.usacitytrip.com/alaska/" class="nav-item nav-link">Alaska</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Beaches</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="https://www.usacitytrip.com/florida/clearwater-beach.html" class="dropdown-item">Florida</a>
+                            <a href="https://www.usacitytrip.com/hawaii/hawaii-best-beaches.html" class="dropdown-item">5 best of Hawaii</a>
+                            <a href="https://www.usacitytrip.com/newjersey/" class="dropdown-item">New Jersey</a>
+                            <a href="https://www.usacitytrip.com/massachusetts/" class="dropdown-item">Massachusetts</a>
+                            <a href="https://www.usacitytrip.com/kansas/" class="dropdown-item">Kansas</a>
                         </div>
                     </div>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -218,7 +184,6 @@
                 <a href="" class="btn btn-primary rounded-pill py-2 px-4">Register</a>
             </div>
         </nav>
-    </div>
         
 
         <div class="container-fluid bg-primary py-5 hero-header">
@@ -249,7 +214,7 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <a href="https://www.gujaratcitytrip.com/slides/image.html?imageurl=https://https://storage.googleapis.com/kreatewebsites/photos600/jain_temple.jpg">
+                        <a href="#">
                             <img class="img-fluid position-absolute w-100 h-100" src="https://storage.googleapis.com/kreatewebsites/photos600/jain_temple.jpg" alt="Jain Temple" style="object-fit: cover;">
                         </a>
                     </div>
@@ -286,47 +251,8 @@
     </div>
     <!-- About End -->
 
+    
     <!-- Service Start -->
-    <style>
-        .service-item {
-            background-color: #ebf3ed;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            text-align: center;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            min-height: 300px;
-        }
-
-        .service-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .service-item h5 {
-            margin-top: 10px;
-            font-size: 18px;
-        }
-
-        .service-item p {
-            font-size: 14px;
-            margin: 10px 0;
-        }
-
-        .service-item a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .service-item i {
-            font-size: 3em;
-            color: #007bff;
-            margin-bottom: 15px;
-        }
-    </style>
-<body>
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -395,7 +321,7 @@
                             <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
                             <a href="https://www.indiacitytrip.com/Gujarat-Destinations/dandi-tour.aspx">
                                 <h5>Dandi tour</h5>
-                                <p>Experience the historic Dandi Tour, tracing the footsteps of Mahatma Gandhi's Salt March</p>
+                                <p>Experience the historic Dandi Tour, tracing the footsteps of Gandhi's Salt March</p>
                             </a>
                         </div>
                     </div>
@@ -417,7 +343,7 @@
                             <i class="fa fa-3x fa-cog text-primary mb-4"></i>
                             <a href="https://www.indiacitytrip.com/Gujarat-Destinations/Surat.aspx">
                                 <h5>Surat</h5>
-                                <p>A beautiful city known for its special food 'Locho'</p>
+                                <p>A beautiful city known for its special food 'Locho'. Also famous for sarees.</p>
                             </a>
                         </div>
                     </div>
@@ -425,7 +351,6 @@
             </div>
         </div>
     </div>
-</body>
     <!-- Service End -->
 
 
@@ -615,52 +540,33 @@
     <!-- Team Start -->
     <style>
         .team-item {
-            border: 1px solid #ddd;
-            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
             overflow: hidden;
-            background-color: #fff;
-            transition: transform 0.3s;
-        }
-    
-        .team-item:hover {
-            transform: scale(1.05);
         }
     
         .team-item img {
             width: 100%;
-            height: 200px; /* Set uniform height */
-            object-fit: cover; /* Ensure the image covers the area without distortion */
+            height: 200px; /* Fixed height for all images */
+            object-fit: cover;
         }
     
-        .team-item .p-4 {
-            min-height: 120px; /* Ensure consistent box height */
-        }
-    
-        .btn-square {
-            width: 36px;
-            height: 36px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            background-color: #f8f9fa;
-            color: #6c757d;
-            text-decoration: none;
-            border: 1px solid #ddd;
-            transition: background-color 0.3s, color 0.3s;
-        }
-    
-        .btn-square:hover {
-            background-color: #007bff;
-            color: #fff;
+        .team-item .text-center {
+            flex-grow: 1;
+            padding: 16px;
         }
     </style>
-
+    
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">Travel Guide</h6>
-                <h1 class="mb-5">Explore Gujarat</h1>
+                <h1 class="mb-5">See ideas and explore</h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -668,13 +574,8 @@
                         <div class="overflow-hidden">
                             <img src="https://storage.googleapis.com/kreatewebsites/photos800/junagarh-fort.jpg" alt="old fort">
                         </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
                         <div class="text-center p-4">
-                            <h5 class="mb-0">Junagadh fort </h5>
+                            <h5 class="mb-0">Junagadh Fort</h5>
                             <small>Junagadh, Gujarat</small>
                         </div>
                     </div>
@@ -683,11 +584,6 @@
                     <div class="team-item">
                         <div class="overflow-hidden">
                             <img src="https://storage.googleapis.com/kreatewebsites/photos600/temple-in-chokhi-dhani.jpg" alt="Ram Temple">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
                         </div>
                         <div class="text-center p-4">
                             <h5 class="mb-0">Chokidhani Ram Temple</h5>
@@ -700,11 +596,6 @@
                         <div class="overflow-hidden">
                             <img src="https://storage.googleapis.com/kreatewebsites/photos600/Ahmedabad_Jama_Masjid_2.jpg" alt="Majid">
                         </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
                         <div class="text-center p-4">
                             <h5 class="mb-0">Jama Masjid</h5>
                             <small>Ahmedabad, Gujarat</small>
@@ -716,11 +607,6 @@
                         <div class="overflow-hidden">
                             <img src="https://storage.googleapis.com/kreatewebsites/photos800/gir-forest-20.jpg" alt="Gir National Park">
                         </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
                         <div class="text-center p-4">
                             <h5 class="mb-0">Gir National Park</h5>
                             <small>Junagadh, Gujarat</small>
@@ -730,6 +616,7 @@
             </div>
         </div>
     </div>
+    
 
     <!-- Top 20 Cities in Gujarat -->
     <div class="container-xxl py-5">
@@ -804,83 +691,83 @@
     <!-- Testimonial End -->
 
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Most Popular</h4>
-                    <a class="btn btn-link" href="#">Ahmedabad</a>
-                    <a class="btn btn-link" href="#">Surat</a>
-                    <a class="btn btn-link" href="#">Vadodara</a>
-                    <a class="btn btn-link" href="#">Rajkot</a>
-                    <a class="btn btn-link" href="#">Top 20</a>
+   <!-- Footer Start -->
+   <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Most popular</h4>
+                <a class="btn btn-link" href="https://www.indiacitytrip.com/Maharashtra-Destinations/Mumbai.aspx">Munbai and Around</a>
+                <a class="btn btn-link" href="https://www.indiacitytrip.com/Rajasthan-Destinations/places-to-see-in-jodhpur.aspx">Jodhpur</a>
+                <a class="btn btn-link" href="https://www.indiacitytrip.com/Himachal-Pradesh-Destinations/Shimla.aspx">Shimla and Manali</a>
+                <a class="btn btn-link" href="https://www.indiacitytrip.com/pilgrimages/ayodhya.html">Ayodhya</a>
+                <a class="btn btn-link" href="https://www.indiacitytrip.com/top-cities.aspx">Top 20</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Contact</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>India City Trip</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>www.indiacitytrip.com</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@indiacitytrip.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Contact</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Gujarat state Trip</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>www.Gujaratstatetrip.com</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@Gujaratstatetrip.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Gallery</h4>
+                <div class="row g-2 pt-2">
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/site102/img/package-1.jpg" alt="Top Cities">
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Gallery</h4>
-                    <div class="row g-2 pt-2">
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/photos100/akshardham_ahmedabad.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/photos800/Old%20Fort%20Surat.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/photos100/gir-forest-6.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/photos500/nazar-bagh-palace.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/photos800/gir-forest-18.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/photos300/zoo-87.jpg" alt="">
-                        </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/site102/img/package-2.jpg" alt="City Tour">
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Newsletter</h4>
-                    <p>Sign up for our newsletter and get inspired for your next trip in Gujarat.</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/site102/img/package-3.jpg" alt="Forth and History">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/site102/img/package-2.jpg" alt="Beaches">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/site102/img/package-3.jpg" alt="Pilgrimages">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light p-1" src="https://storage.googleapis.com/kreatewebsites/site102/img/package-1.jpg" alt="Family Fun">
                     </div>
                 </div>
             </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-3">Search</h4>
+                <p>Mahakhumbh is happening in India</p>
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+                    <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Search</button>
+                </div>
+            </div>
         </div>
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Gujarat state trip</a>, All Right Reserved
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <div class="footer-menu">
-                            <a href="">Home</a>
-                            <a href="">Saurashtra</a>
-                            <a href="">Kutch</a>
-                            <a href="">Best Road Trips</a>
-                        </div>
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="https://www.indiacitytrip.com/">India City Trip</a>, All Right Reserved
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        <a href="https://www.indiacitytrip.com/">Home</a>
+                        <a href="https://www.indiacitytrip.com/East-India-Cities.aspx">East India</a>
+                        <a href="https://www.indiacitytrip.com/West-India-Cities.aspx">West India</a>
+                        <a href="https://www.indiacitytrip.com/South-India-Cities.aspx">Best South India</a>
+                        <a href="https://www.indiacitytrip.com/North-India-Cities.aspx">North South India</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer End -->
+</div>
+<!-- Footer End -->
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
@@ -904,6 +791,7 @@
     <!-- Template Javascript -->
     <script src="https://storage.googleapis.com/kreatewebsites/site102/js/main.js"></script>
 </body>
+</html>
 
 
 
